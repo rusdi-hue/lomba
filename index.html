@@ -7,99 +7,112 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: url('latar1.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
     }
 
     .container {
-      max-width: 500px;
-      margin: auto;
-      background: url('latar14.jpg') no-repeat center center;
-      background-size: cover;
-      padding: 30px 20px;
+      max-width: 600px;
+      margin: 40px auto;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('latar14.jpg') center/cover no-repeat;
+      padding: 30px 25px;
       border-radius: 20px;
-      margin-top: 40px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
       color: white;
       position: relative;
       z-index: 1;
+      backdrop-filter: blur(3px);
     }
-
 
     h1 {
       text-align: center;
-      font-size: 28px;
-      color: #FFD700;
-      margin-bottom: 5px;
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFDD57;
+      margin-bottom: 8px;
     }
 
     h2 {
       text-align: center;
       font-size: 16px;
-      font-weight: normal;
-      color: #ccc;
+      color: #e0e0e0;
+      font-weight: 400;
       margin-bottom: 20px;
     }
 
     .logo {
       display: block;
       margin: 0 auto 20px auto;
-      max-width: 200px;
-    }
-
-    .gambar-dekorasi {
-      display: block;
-      margin: 20px auto;
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px; /* opsional */
+      max-width: 120px;
     }
 
     p {
       text-align: center;
       font-size: 15px;
+      line-height: 1.6;
       margin-bottom: 10px;
-      line-height: 1.5;
     }
 
     .highlight {
       font-weight: bold;
-      color: #fff;
+      color: #fffc;
     }
 
     a.btn {
       display: block;
       width: 100%;
-      text-align: left;
-      background-color: #FFA500;
+      background-color: #fcb045;
       color: white;
       padding: 12px 20px;
-      border-radius: 10px;
-      font-size: 16px;
-      font-weight: bold;
-      margin: 10px 0;
-      cursor: pointer;
-      transition: 0.3s;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      margin: 12px 0;
       text-decoration: none;
       box-sizing: border-box;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     a.btn.white {
-      background-color: #fff;
-      color: #000;
+      background-color: #ffffff;
+      color: #333;
     }
 
     a.btn:hover {
-      transform: scale(1.02);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
       opacity: 0.95;
     }
 
     a.btn span {
-      margin-right: 10px;
+      margin-right: 8px;
     }
-    
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px 15px;
+        padding: 20px 15px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 14px;
+      }
+
+      a.btn {
+        font-size: 14px;
+        padding: 10px 16px;
+      }
+    }
+
+    /* Optional: Import modern Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
   </style>
 </head>
 <body>
@@ -112,10 +125,11 @@
     <p class="highlight">Sabtu & Minggu, 14–15 Juni 2025</p>
     <p>Untuk daftar lombanya, bisa langsung klik link di bawah, yaa!</p>
 
-    <a href="https://forms.gle/2kAraqBKruwQ6fi98" target="_blank" class="btn"><span>☰</span> LOMBA TILAWAH</a>
-    <a href="https://forms.gle/eDDtZbZdA6cCKg5ZA" target="_blank" class="btn white"><span>☰</span> LOMBA DA'I</a>
-    <a href="https://forms.gle/fMBsFHh6uCVoRsyx5" target="_blank" class="btn"><span>☰</span> LCC (Khusus Internal Himpunan Mahasiswa)</a>
-    <a href="https://forms.gle/EKUoqKcxP2b9bQ768" target="_blank" class="btn white"><span>☰</span> KAJIAN ISLAM</a>
+    <a href="https://forms.gle/2kAraqBKruwQ6fi98" target="_blank" class="btn"><span>☪</span> LOMBA TILAWAH</a>
+    <a href="https://forms.gle/eDDtZbZdA6cCKg5ZA" target="_blank" class="btn white"><span>🗣</span> LOMBA DA'I</a>
+    <a href="https://forms.gle/fMBsFHh6uCVoRsyx5" target="_blank" class="btn"><span>📚</span> LCC (Khusus Internal Himpunan Mahasiswa)</a>
+    <a href="https://forms.gle/EKUoqKcxP2b9bQ768" target="_blank" class="btn white"><span>👩‍🏫</span> SEMINAR MUSLIMAH</a>
+
     <p>Terimakasih kepada rekan-rekan yang sudah mendaftar, Kami tunggu partisipasinya.</p>
   </div>
 </body>
